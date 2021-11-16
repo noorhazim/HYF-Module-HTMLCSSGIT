@@ -1,8 +1,0 @@
-How to create file or folder by CLI
-  for folder: $mkdir filename
-  for file: $touch filename.html(file type)
- to display it we use: $ls 
-
-How to create nested directories: $mkdir -p Noor/Dilan/Both
-
-How to append a message to a file : $echo "message">> text.html(file name)
