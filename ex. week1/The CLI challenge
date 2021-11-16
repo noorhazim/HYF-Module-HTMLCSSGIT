@@ -1,1 +1,13 @@
+How to create file or folder in CLI?
+ for folder: $ mkidr .foldername
+ for files: $ touch .filename.html(file type)   
+ 
+ for display it we use :   $ls 
+ 
+How to create nested directories?
+ $mkdir Noor/Dilan/Both
 
+How to append messege to a file?
+ $echo "the messege">> text.html(file name)
+
+ 
