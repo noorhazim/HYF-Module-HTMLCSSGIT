@@ -1,1 +1,9 @@
 
+How to create a floder or file:
+ for folders: $mkdir foldername
+ for files: $touch filename.html(file type)
+ 
+How to create nested directories:
+ $mkidr -p Noor/dilan/Both
+ 
+How to append a messege to a file: $echo "messege">> text.html(filename.type)
