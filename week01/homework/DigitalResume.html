@@ -11,95 +11,91 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <main id="wrapper">
         <div class="DigitalResume">
             <!-- we divide our Digital Resume for two sides-->
             <!--left side-->
-            <div class="left">
+            <aside class="left">
                 <!--first thing we upload an image-->
                 <div class="image">
                     <img src="DigitalResumeimage.jpeg" alt="image" />
                 </div>
                 <!--Some words for the Profile-->
-                <div class="profile">
+                <section class="profile">
                     <h2 class="title">Profile</h2>
                     <p class="profile-text">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi harum nobis tenetur. Labore quod earum culpa adipisci quos reprehenderit nisi facere vel! Provident eum minus voluptate culpa deserunt, perspiciatis dolorem.
                     </p>
-                </div>
+                </section>
                 <!--we start to write the skills with there icons-->
-                <div class="skills">
+                <section class="skills">
                     <h2 class="title">Skills</h2>
                     <ul>
                         <li>
-                            <div class="skills-wrap">
-                                <div class="skill-logo">
+                            <div class="skills_wrap">
+                                <p class="skill_logo">
                                     <i class="fab fa-html5"></i>
-                                </div>
-                                <div class="skill-info">HTML</div>
+                                </p>
+                                <div class="skill_info">HTML</div>
                             </div>
                         </li>
                         <li>
-                            <div class="skills-wrap">
-                                <div class="skill-logo">
+                            <div class="skills_wrap">
+                                <p class="skill_logo">
                                     <i class="fab fa-css3-alt"></i>
-                                </div>
-                                <div class="skill-info">CSS</div>
+                                </p>
+                                <div class="skill_info">CSS</div>
                             </div>
                         </li>
                         <li>
-                            <div class="skills-wrap">
-                                <div class="skill-logo">
+                            <div class="skills_wrap">
+                                <p class="skill_logo">
                                     <i class="fab fa-python"></i>
-                                </div>
-                                <div class="skill-info">Python</div>
+                                </p>
+                                <div class="skill_info">Python</div>
                             </div>
                         </li>
                         <li>
-                            <div class="skills-wrap">
-                                <div class="skill-logo">
+                            <div class="skills_wrap">
+                                <p class="skill_logo">
                                     <i class="fas fa-laptop-code"></i>
-                                </div>
-                                <div class="skill-info">coding</div>
+                                </p>
+                                <div class="skill_info">coding</div>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </section>
                 <!--now fill the Languages part-->
-                <div class="languages">
+                <section class="languages">
                     <h2 class="title"><i class="fas fa-language"></i>Languages</h2>
                     <ul>
                         <li>
-                            <div class="languages-wrap">
-                                <div class="lan-circle"></div>
-                                <div class="language-info">Kurdish</div>
+                            <div class="languages_wrap">
+                                <div class="language_info">Kurdish</div>
                                 <div class="level">Native</div>
                             </div>
                         </li>
                         <li>
-                            <div class="languages-wrap">
-                                <div class="lan-circle"></div>
-                                <div class="language-info">Arabic</div>
+                            <div class="languages_wrap">
+                                <div class="language_info">Arabic</div>
                                 <div class="level">Native</div>
                             </div>
                         </li>
                         <li>
-                            <div class="languages-wrap">
-                                <div class="lan-circle"></div>
-                                <div class="language-info">English</div>
+                            <div class="languages_wrap">
+                                <div class="language_info">English</div>
                                 <div class="level">Professional working proficiency</div>
                             </div>
                         </li>
                         <li>
-                            <div class="languages-wrap">
-                                <div class="lan-circle"></div>
-                                <div class="language-info">Dutch</div>
+                            <div class="languages_wrap">
+                                <div class="language_info">Dutch</div>
                                 <div class="level">Elementary proficiency</div>
                             </div>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </section>
+            </aside>
             <!-- time to start with the right part-->
             <div class="right">
                 <!--we start with the header part which will contain(name, specialization and contact)-->
@@ -113,7 +109,9 @@
                                     <div class="logo">
                                         <i class="fas fa-phone-alt"></i>
                                     </div>
-                                    <div class="info">+01 2345678</div>
+                                    <div class="info">
+                                        <a target="blank" href="tel:+01 2345678">+01 2345678</a>
+                                    </div>
                                 </div>
                             </li>
 
@@ -122,107 +120,140 @@
                                     <div class="logo">
                                         <i class="fas fa-envelope"></i>
                                     </div>
-                                    <div class="info">noorxxx@gmail.com</div>
-                                </div>
-                            </li>
+                                    <div class="info">
+                                        <a target="blank" href="noorxxx@gmail.com">noorxxx@gmail.com</a
+                      >
+                    </div>
+                  </div>
+                </li>
 
-                            <li>
-                                <div class="contact_wrap">
-                                    <div class="logo">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="info addess">street 1, postcode city</div>
-                                </div>
-                            </li>
-                        </ul>
+                <li>
+                  <div class="contact_wrap">
+                    <div class="logo">
+                      <i class="fas fa-map-marker-alt"></i>
                     </div>
-                </header>
-                <!--the section contains the Education and the Experience part-->
-                <section class="details">
-                    <h2 class="title">Education</h2>
-                    <div class="education">
-                        <ul>
-                            <li>
-                                <div class="ed_wrap">
-                                    <div class="date">2007 – 2011</div>
-                                    <div class="section_info">
-                                        <div class="degree">Bachelor Degree</div>
-                                        <div class="where">
-                                            Koya University/ Mathematics Department
-                                        </div>
-                                        <div class="ed_details">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto eius fugit eos, architecto, animi sequi aspernatur beatae cumque similique earum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="ed_wrap">
-                                    <div class="date">2013 – 2016</div>
-                                    <div class="section_info">
-                                        <div class="degree">Master Degree</div>
-                                        <div class="where">
-                                            sulaimani University/ Mathematics Department
-                                        </div>
-                                        <div class="ed_details">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto eius fugit eos, architecto, animi sequi aspernatur beatae cumque similique earum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="info addess">
+                      <a
+                        target="blank"
+                        href="https://www.google.com/maps/place/Amsterdam/@52.3547925,4.7638779,11z/data=!3m1!4b1!4m5!3m4!1s0x47c63fb5949a7755:0x6600fd4cb7c0af8d!8m2!3d52.3675734!4d4.9041389"
+                        >street 1, postcode city</a
+                      >
                     </div>
-                    <h2 class="title">Experience</h2>
-                    <div class="experience">
-                        <ul>
-                            <li>
-                                <div class="exp_wrap">
-                                    <div class="date">2017 – 2019</div>
-                                    <div class="section_info">
-                                        <div class="job position">Assistant lecturer</div>
-                                        <div class="company">
-                                            Koya University/Mathematics Department
-                                        </div>
-                                        <div class="ed_details">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto eius fugit eos, architecto, animi sequi aspernatur beatae cumque similique earum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="exp_wrap">
-                                    <div class="date">2017 – 2019</div>
-                                    <div class="section_info">
-                                        <div class="job position">Assistant lecturer</div>
-                                        <div class="company">
-                                            Haibat Sultan Technical Institute
-                                        </div>
-                                        <div class="ed_details">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto eius fugit eos, architecto, animi sequi aspernatur beatae cumque similique earum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="exp_wrap">
-                                    <div class="date">2011 – 2013</div>
-                                    <div class="section_info">
-                                        <div class="job position">Junior Researcher</div>
-                                        <div class="company">
-                                            Koya University/Mathematics Department
-                                        </div>
-                                        <div class="ed_details">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto eius fugit eos, architecto, animi sequi aspernatur beatae cumque similique earum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </header>
+          <!--the section contains the Education and the Experience part-->
+          <section class="details">
+            <h2 class="title">Education</h2>
+            <div class="education">
+              <ul>
+                <li>
+                  <div class="ed_wrap">
+                    <div class="date">2007 – 2011</div>
+                    <div class="section_info">
+                      <div class="degree">Bachelor Degree</div>
+                      <div class="where">
+                        <a target="blank" href="https://koyauniversity.org/"
+                          >Koya University/</a
+                        >
+                        Mathematics Department
+                      </div>
+                      <div class="ed_details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Soluta iusto eius fugit eos, architecto, animi sequi
+                        aspernatur beatae cumque similique earum.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="ed_wrap">
+                    <div class="date">2013 – 2016</div>
+                    <div class="section_info">
+                      <div class="degree">Master Degree</div>
+                      <div class="where">
+                        <a target="blank" href="https://univsul.edu.iq/en/"
+                          >Sulaimani University/</a
+                        >
+                        Mathematics Department
+                      </div>
+                      <div class="ed_details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Soluta iusto eius fugit eos, architecto, animi sequi
+                        aspernatur beatae cumque similique earum.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <h2 class="title">Experience</h2>
+            <div class="experience">
+              <ul>
+                <li>
+                  <div class="exp_wrap">
+                    <div class="date">2017 – 2019</div>
+                    <div class="section_info">
+                      <div class="job position">Assistant lecturer</div>
+                      <div class="company">
+                        <a target="blank" href="https://koyauniversity.org/"
+                          >Koya University/</a
+                        >
+                        Mathematics Department
+                      </div>
+                      <div class="ed_details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Soluta iusto eius fugit eos, architecto, animi sequi
+                        aspernatur beatae cumque similique earum.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_wrap">
+                    <div class="date">2017 – 2019</div>
+                    <div class="section_info">
+                      <div class="job position">Assistant lecturer</div>
+                      <div class="company">
+                        <a target="blank" href="https://univsul.edu.iq/en/"
+                          >Haibat Sultan Institute/</a
+                        >
+                        Mathematics Department
+                      </div>
+                      <div class="ed_details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Soluta iusto eius fugit eos, architecto, animi sequi
+                        aspernatur beatae cumque similique earum.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="exp_wrap">
+                    <div class="date">2011 – 2013</div>
+                    <div class="section_info">
+                      <div class="job position">Junior Researcher</div>
+                      <div class="company">
+                        <a target="blank" href="https://koyauniversity.org/"
+                          >Koya University/</a
+                        >
+                        Mathematics Department
+                      </div>
+                      <div class="ed_details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Soluta iusto eius fugit eos, architecto, animi sequi
+                        aspernatur beatae cumque similique earum.
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
-    </div>
-</body>
-
+      </div>
+    </main>
+  </body>
 </html>

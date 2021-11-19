@@ -35,6 +35,18 @@ body {
     width: 250px;
     padding: 0 25px;
     padding-left: 30px;
+    display: flex;
+    flex-flow: column wrap-reverse;
+}
+
+a:link {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+a:visited {
+    color: black;
 }
 
 .left .image {
@@ -60,7 +72,7 @@ body {
     justify-content: space-between;
 }
 
-.skills .skills-wrap {
+.skills .skills_wrap {
     width: 80px;
     height: 80px;
     display: flex;
@@ -72,7 +84,7 @@ body {
     margin-bottom: 15px;
 }
 
-.skills .skills-wrap .skill-info {
+.skills .skills_wrap .skill_info {
     margin-top: 5px;
 }
 
@@ -103,17 +115,22 @@ body {
     margin-top: 30px;
 }
 
-.languages-wrap::before {
+.skill_logo {
+    cursor: pointer;
+}
+
+.languages .languages_wrap {
+    padding: 10px;
+}
+
+.languages .languages_wrap .language_info::before {
     content: "-";
-    position: absolute;
-    display: flex;
-    left: 330px;
-    color: black;
     font-weight: 900;
 }
 
-.languages .languages-wrap {
-    padding: 10px;
+.languages .languages_wrap .language_info::after {
+    content: "-";
+    font-weight: 900;
 }
 
 
@@ -123,6 +140,8 @@ body {
     background: white;
     width: 500px;
     padding: 0 25px;
+    display: flex;
+    flex-flow: column wrap-reverse;
 }
 
 header {
@@ -164,19 +183,12 @@ header {
 
 .contact ul {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .contact .contact_wrap {
     display: flex;
     align-items: center;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.contact .contact_wrap .info {
-    width: 100px;
-    height: 50px;
-    padding-top: 15px;
 }
 
 .contact .contact_wrap .logo {
@@ -187,13 +199,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .details,
 .education,
 .experience {
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -285,13 +297,13 @@ header {
 
 /** some for both sides**/
 
-.skills .skills-wrap:hover,
+.skills .skills_wrap:hover,
 .contact .contact_wrap .logo:hover {
     background: white;
 }
 
-.skills .skills-wrap:hover .skill-logo,
-.skills .skills-wrap:hover .skill-info,
+.skills .skills_wrap:hover .skill_logo,
+.skills .skills_wrap:hover .skill_info,
 .contact .contact_wrap:hover .logo {
     color: rgb(63, 63, 204);
 }
