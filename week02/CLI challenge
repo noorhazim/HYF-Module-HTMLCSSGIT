@@ -7,11 +7,17 @@
    . we use $ls -a instead of $ls  
    
 - to know the changes and save it: ($git status)
+
 - to add the files ($git add .)
+
 -  commit the files  ($git commit -m "messege")
+
 - to confirm deleting files: ($git add .) or if you are not sure ($git cheackout --filename)
+
 - to show all the commits: ($git log)
+
 - to show the commits and the content: ($git log -p)
 
 - to uploas the commits that we made on the files in our pc to GitHub: ($git push)
+
 - ($git pull) to daownload the commits from our online respository
