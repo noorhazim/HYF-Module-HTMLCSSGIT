@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo_line {
+    border-left: 4px solid #ff424d;
+    height: 25px;
+    padding-left: 0.1em;
+}
+
+.logo_circle {
+    height: 17px;
+    width: 17px;
+    background-color: #ff424d;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.navbar-brand {
+    display: flex;
+    margin-top: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.header {
+    font-stretch: expanded;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    padding-top: 10px;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    float: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* hamburger style*/
+
+.hamburger {
+    display: none;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav_item {
+    padding: 5px 10px 0px 10px;
+}
+
+.nav_item .dropdown_name {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 5px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dropdown_content a {
+    display: block;
+    float: none;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.nav_item:hover .dropdown_content {
+    display: block;
+}
+
+#create_patreon {
+    float: right;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    height: 35px;
+    margin-top: 12px;
+    border: none;
+    background-color: #ff424d;
+    border-radius: 30px;
+    object-fit: scale-down;
+}
+
+#login_link {
+    font-size: 15px;
+    color: black;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+#search_bar {
+    float: right;
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 10px 20px 12px 45px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    border-radius: 30px;
+}
+
+#search_bar:focus {
+    outline: 3px solid rgb(240, 240, 240);
+}
+
+
+/* css the first part of the page */
+
+.main_part {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: black;
+    margin-top: 70px;
+    height: 70em;
+    color: white;
+}
+
+h1 {
+    color: #ff424d;
+    width: 300px;
+}
+
+#get_started {
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    padding: 14px;
+    border: none;
+    background-color: #ff424d;
+    border-radius: 30px;
+}
+
+
+/* what is patreon css */
+
+#what_patreon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    color: black;
+}
+
+.what_patreon_main_p {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.what_patreon_title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.what_patreon_subtitle {
+    font-size: 30px;
+    color: #ff424d;
+    margin: 10px 10px 10px 10px;
+}
+
+.what_patreon_p {
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    width: 90%;
+}
+
+.what_patreon_img {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 30px;
+    color: black;
+}
+
+.what_patreon_box {
+    margin: 50px 0 20px 10px
+}
+
+#its_easier {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    color: black;
+}
+
+.its_easier_title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.its_easier_p {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 10px 50px 10px;
+}
+
+.its_easier_img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* how others see patreon css */
+
+#how_other_use_patreon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    color: black;
+}
+
+.how_other_use_patreon_title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.how_other_use_patreon_box,
+.how_other_use_patreon_boxes {
+    margin: 50px 0 20px 10px;
+}
+
+.how_other_use_patreon_subtitle {
+    font-size: 25px;
+    color: #ff424d;
+    width: 80%;
+}
+
+.how_other_use_patreon_p,
+.read_more {
+    font-size: 20px;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.how_other_use_patreon_img {
+    width: 80%;
+}
+
+
+/* you_ready css */
+
+.you_ready {
+    padding: 50px 0 100px 0;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.you_ready_title {
+    padding-bottom: 50px;
+}
+
+
+/* footer css */
+
+.footer {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+}
+
+.logo_line_footer {
+    border-left: 4px solid white;
+    height: 25px;
+    padding-left: 0.1em;
+}
+
+.logo_circle_footer {
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.footer-brand {
+    display: flex;
+}
+
+.footer_first {
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+}
+
+.footer-contents {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+}
+
+.footer-contents h4 {
+    font-size: 15px;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    font-size: 10px;
+}
+
+.footer_content a {
+    color: white;
+    font-size: 15px;
+}
+
+.social_medis_icons {
+    font-size: 25px;
+    position: absolute;
+    left: 30px;
+    margin-top: 225px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav_item {
+        margin: 1.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    #search_bar {
+        position: relative;
+        top: 100;
+        width: 110%;
+    }
+    /* main part css */
+    .main_text {
+        padding: 100px 0 0 0px;
+    }
+    h1 {
+        color: #ff424d;
+        text-align: left;
+        font-size: 30px;
+        margin-left: 40px;
+        width: 170px;
+    }
+    .main_text_p {
+        padding-bottom: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        font-stretch: condensed;
+        margin-left: 20px;
+        width: 300px;
+        margin: 20px 0px 10px 40px;
+    }
+    #get_started {
+        margin-left: 40px;
+    }
+    #first_part_gif {
+        max-width: 100%;
+        padding-top: 40px;
+    }
+    #play_circle {
+        position: absolute;
+        bottom: 170px;
+        left: 155px;
+        color: #ff424d;
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .nav-menu {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav_item {
+        margin: 1.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        left: 100px;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav_right {
+        margin-left: 100px;
+    }
+    #search_bar {
+        position: relative;
+        top: 100;
+        width: 130%;
+    }
+    /* main part css */
+    .main_text {
+        padding: 100px 0 0 0px;
+    }
+    h1 {
+        color: #ff424d;
+        text-align: left;
+        font-size: 50px;
+        margin-left: 40px;
+        width: 225px;
+    }
+    .main_text_p {
+        padding-bottom: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        font-stretch: condensed;
+        width: 400px;
+        margin: 30px 0px 20px 40px;
+    }
+    #get_started {
+        margin-left: 40px;
+    }
+    #first_part_gif {
+        position: absolute;
+        max-width: 40%;
+        top: 200px;
+        right: 20px;
+    }
+    #play_circle {
+        position: absolute;
+        top: 260px;
+        right: 140px;
+        color: #ff424d;
+        z-index: 2;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .nav_right {
+        margin-left: 200px;
+    }
+    .nav-menu {
+        margin-top: 15px;
+    }
+    #create_patreon {
+        padding: 10px;
+        width: 180px;
+        height: 45px;
+        margin-top: 12px;
+    }
+    #search_bar {
+        margin-top: 15px;
+    }
+    #login_link {
+        margin-top: 15px;
+    }
+    .navbar-brand {
+        margin-top: 15px;
+    }
+    /*main part css */
+    .main_text {
+        padding: 100px 0 0 200px;
+    }
+    h1 {
+        color: #ff424d;
+        font-size: 60px;
+        width: 500px;
+    }
+    .main_text_p {
+        padding-bottom: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        font-stretch: condensed;
+        width: 500px;
+        margin: 30px 10px 30px 10px;
+    }
+    #first_part_gif {
+        position: absolute;
+        width: 35%;
+        top: 180px;
+        right: 150px;
+    }
+    #play_circle {
+        color: #ff424d;
+        position: absolute;
+        right: 380px;
+        bottom: 460px;
+        z-index: 2;
+    }
+    /* what parteon css*/
+    #what_patreon {
+        display: flex;
+        margin-top: 350px;
+        color: black;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .what_patreon_content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+    .what_patreon_content .what_patreon_box {
+        width: 35%;
+    }
+    .what_patreon_box {
+        margin: 50px 0 0px 20px
+    }
+    /* its easier css*/
+    .its_easier_img {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .how_other_use_patreon_boxes {
+        display: flex;
+        flex-direction: row;
+        margin-left: 200px;
+    }
+    .how_other_use_patreon_box {
+        width: 25%;
+    }
+    .how_other_use_patreon_img {
+        width: 100%;
+    }
+    .footer_first {
+        font-size: 15px;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        width: 150px;
+        margin: 10px 10px 10px 10px;
+        padding: 10px;
+    }
+    .footer-contents {
+        display: flex;
+        flex-direction: row;
+        padding-left: 100px;
+    }
+    .footer_content {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        padding-left: 40px;
+    }
+    .footer_content a {
+        font-size: 10px;
+        color: white;
+        font-size: 15px;
+    }
+    .footer_second_part {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 300px;
+    }
+    .social_medis_icons {
+        font-size: 25px;
+    }
+}
