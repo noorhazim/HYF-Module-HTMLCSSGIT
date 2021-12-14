@@ -73,6 +73,7 @@ a:link {
 
 .nav_menu {
     display: flex;
+    align-items: center;
 }
 
 .nav_item {
@@ -435,26 +436,20 @@ h1 {
     }
     /* main part css */
     .main_text {
-        padding: 100px 0 0 0px;
+        margin: 100px 40px;
     }
     h1 {
         color: #ff424d;
         text-align: left;
         font-size: 30px;
-        margin-left: 40px;
         width: 170px;
     }
     .main_text_p {
-        padding-bottom: 30px;
         font-size: 20px;
         line-height: 30px;
         font-stretch: condensed;
-        margin-left: 20px;
         width: 300px;
-        margin: 20px 0px 10px 40px;
-    }
-    .get_started {
-        margin-left: 40px;
+        padding: 20px 0 40px;
     }
     #first_part_gif {
         max-width: 100%;
@@ -462,7 +457,7 @@ h1 {
     }
     #play_circle {
         position: absolute;
-        bottom: 170px;
+        bottom: 200px;
         left: 155px;
         color: #ff424d;
         z-index: 2;
@@ -528,25 +523,20 @@ h1 {
     }
     /* main part css */
     .main_text {
-        padding: 100px 0 0 0px;
+        margin: 100px 80px;
     }
     h1 {
         color: #ff424d;
         text-align: left;
         font-size: 50px;
-        margin-left: 40px;
         width: 225px;
     }
     .main_text_p {
-        padding-bottom: 30px;
         font-size: 30px;
         line-height: 30px;
         font-stretch: condensed;
         width: 400px;
-        margin: 30px 0px 20px 40px;
-    }
-    .get_started {
-        margin-left: 40px;
+        padding: 20px 0 40px;
     }
     #first_part_gif {
         position: absolute;
@@ -597,7 +587,7 @@ h1 {
     }
     /*main part css */
     .main_text {
-        padding: 100px 0 0 30px;
+        margin: 80px 200px;
     }
     h1 {
         color: #ff424d;
@@ -605,12 +595,11 @@ h1 {
         width: 500px;
     }
     .main_text_p {
-        padding-bottom: 30px;
+        padding: 15px 0 40px;
         font-size: 20px;
         line-height: 30px;
         font-stretch: condensed;
         width: 500px;
-        margin: 30px 10px 30px 10px;
     }
     #first_part_gif {
         position: absolute;
